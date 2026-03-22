@@ -3,7 +3,6 @@
     $db_handle = new DBController();
     $query = "SELECT DISTINCT department FROM class";
     $result = $db_handle->runQuery($query);
-    echo "test";
 ?>
 <!DOCTYPE html>
 <html lang="en">
