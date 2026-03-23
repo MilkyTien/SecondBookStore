@@ -13,7 +13,7 @@
         <div class="imagePreview"></div>
         <div class="editImg">
             <input type="file" id="uploadImg">
-            <label for="uploadImg">上傳圖片</label>
+            <label for="uploadImg"></label>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
