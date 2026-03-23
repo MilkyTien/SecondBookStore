@@ -1,0 +1,7 @@
+.imagePreview{
+    width: 200px;
+    height: 200px;
+    background:url(http://cliquecities.com/assets/no-image-e3699ae23f866f6cbdf0e910b821dca.png);
+    border: 6px solid #f8f8f8;
+    box-shadow:10px 4px 4px -3px rgba(0,0,0,0.2);
+}

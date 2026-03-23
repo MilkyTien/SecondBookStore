@@ -10,9 +10,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="upload.css">
     <title>上架</title>
 </head>
 <body>
+    <div class="imagePreview"></div>
+    <div class="editImg">
+        <input type="file" id="bookimg">
+        <label for="bookimg">上傳圖片</label>
+    </div>
+    <label>isbn</label>
+    <input type="text" name="isbn" id="isbn"><br>
+    <label>書名</label>
+    <input type="text" name="bookName" id="bookName"><br>
+    <label>作者</label>
+    <input type="text" name="author" id="author"><br>
+    <label>出版社</label>
+    <input type="text" name="publisher" id="publisher"><br>
+    <label>原價</label>
+    <input type="text" name="origPrice" id="origPrice"><br>
+
 
     <label>部別</label><br>
     <select name="department" id="department" onchange="geteduSystem(this.value);">
@@ -71,5 +88,20 @@
             });
         }
     </script>
+    <label>授課教師</label>
+    <input type="text" name="teacher" id="teacher"><br>
+    <label>課程種類</label>
+    <input type="text" name="courseType" id="courseType"><br>
+    <label>書況</label>
+    <input type="text" name="bookCondition" id="bookCondition"><br>
+    <label>售價</label>
+    <input type="text" name="price" id="price"><br>
+    <label>交易方式</label>
+    <label>面交</label>
+    <label>支付方式</label>
+    <label>現金</label>
+    <button type="submit" id="submit">上架</button>
+    <button type="button" id="cancel">取消</button>
+    <script src="main.js"></script>
 </body>
 </html>
