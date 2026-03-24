@@ -1,3 +1,4 @@
+
 <?php
     include("dbcontroller.php");
     $db_handle = new DBController();
@@ -19,7 +20,7 @@
 <div class="container mt-5">
     <h2 class="mb-4 text-center">書籍上架</h2>
     
-    <form id="uploadForm" method="POST" action="upload_process.php" enctype="multipart/form-data"></form>
+    <form id="uploadForm" method="POST" action="upload_process.php" enctype="multipart/form-data">
         <div class="row ">
             <div class="col-lg-5 mb-4" >
 

@@ -8,7 +8,9 @@
     border: #ccc solid 1px;
     padding: 20px;
     border-radius: 10px;
-}.imagePreview{
+    margin-bottom: 50px;
+}
+.imagePreview{
     width: 250px;
     height: 250px;
     background:url(http://cliquecities.com/assets/no-image-e3699ae23f866f6cbdf0e910b821dca.png);
