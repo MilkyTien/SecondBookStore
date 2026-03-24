@@ -1,4 +1,4 @@
-<option value="">請選擇年級</option>
+<option value="" disabled selected>請選擇年級</option>
 <?php
     include("dbcontroller.php");
     $db_handle = new DBController();

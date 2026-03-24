@@ -6,7 +6,7 @@
         $query = "SELECT DISTINCT eduSystem FROM class WHERE department = '$department'";
         $result = $db_handle->runQuery($query);
 ?>
-<option value="">請選擇學制</option>
+<option value="" disabled selected>請選擇學制</option>
 <?php
         foreach ($result as $eduSystem) {
             echo '<option value="' . $eduSystem["eduSystem"] . '">' . $eduSystem["eduSystem"] . '</option>';

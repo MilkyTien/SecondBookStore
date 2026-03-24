@@ -32,23 +32,23 @@
                     <table class="table-form w-100">
                         <tr>
                             <td style="width: 80px;"><label>ISBN</label></td>
-                            <td><input type="text" class="form-control" name="isbn" id="isbn"></td>
+                            <td><input type="text" class="form-control" name="isbn" id="isbn" required></td>
                         </tr>
                         <tr>
                             <td><label>書名</label></td>
-                            <td><input type="text" class="form-control" name="bookName" id="bookName"></td>
+                            <td><input type="text" class="form-control" name="bookName" id="bookName" required></td>
                         </tr>
                         <tr>
                             <td><label>作者</label></td>
-                            <td><input type="text" class="form-control" name="author" id="author"></td>
+                            <td><input type="text" class="form-control" name="author" id="author" required></td>
                         </tr>
                         <tr>
                             <td><label>出版社</label></td>
-                            <td><input type="text" class="form-control" name="publisher" id="publisher"></td>
+                            <td><input type="text" class="form-control" name="publisher" id="publisher" required></td>
                         </tr>
                         <tr>
                             <td><label>原價</label></td>
-                            <td><input type="number" class="form-control" name="origPrice" id="origPrice"></td>
+                            <td><input type="number" class="form-control" name="origPrice" id="origPrice" required></td>
                         </tr>
                     </table>
             </div>
@@ -58,7 +58,7 @@
                         <tr>
                             <td style="width: 100px;"><label>部別</label></td>
                             <td>
-                                <select class="form-select" name="department" id="department" onchange="geteduSystem(this.value);">
+                                <select class="form-select" name="department" id="department" required onchange="geteduSystem(this.value); ">
                                     <option value="" disabled selected>請選擇部別</option>
                                     <?php
                                         if(!empty($result)) {
@@ -73,7 +73,7 @@
                         <tr>
                             <td><label>學制</label></td>
                             <td>
-                                <select class="form-select" name="eduSystem" id="eduSystem" onchange="getmajor(this.value);">
+                                <select class="form-select" name="eduSystem" id="eduSystem" required onchange="getmajor(this.value); ">
                                     <option value="" disabled selected>請選擇學制</option>
                                 </select>
                             </td>
@@ -81,7 +81,7 @@
                         <tr>
                             <td><label>科系</label></td>
                             <td>
-                                <select class="form-select" name="major" id="major" onchange="getgrade(this.value);">
+                                <select class="form-select" name="major" id="major" required onchange="getgrade(this.value); ">
                                     <option value="" disabled selected>請選擇科系</option>
                                 </select>
                             </td>
@@ -89,7 +89,7 @@
                         <tr>
                             <td><label>年級</label></td>
                             <td>
-                                <select class="form-select" name="grade" id="grade">
+                                <select class="form-select" name="grade" id="grade" required>
                                     <option value="" disabled selected>請選擇年級</option>
                                 </select>
                             </td>
@@ -181,6 +181,7 @@
             reader.readAsDataURL(this.files[0]);
         }
     });
+
 </script>
 
 <script src="main.js"></script>
